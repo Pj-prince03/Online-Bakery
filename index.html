@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<!------------------------------------------------ Header section ------------------------------------------------------>
+
+    <header>
+        <div class="logo"> Bakery </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#testimonials" class="nav-link">Our Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#ourteam" class="nav-link">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!------------------------------------------------ Hero section --------------------------------------------------------->
+
+<!--------------------------------------------------- Home section ------------------------------------------------------>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the World of Cookies</h1>
+            <p></p>
+            <button id="exploreButton">Explore Now</button>
+        </div>
+    </section>
+
+<!------------------------------------------------ Products section ----------------------------------------------------->
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="./assetes/bc.jpg" alt="Cookies">
+                <h3>Butter Cookies</h3>
+                <p>High-quality Cookies having a pleasent buttery feeling.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="./assetes/ccc.jpeg" alt="Cookies">
+                <h3>Chocochip Cookies</h3>
+                <p>Indulge in the perfect blend of crispy and gooey with our irresistible ChocoChip Cookies.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="./assetes/f&ncc.jpg" alt="Bird Cage">
+                <h3>Fruit & Nut Cookies</h3>
+                <p>Savor the wholesome goodness of our Fruit and Nut Cookies, packed with chewy fruits and crunchy nuts in every delicious bite!</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+        <div id="cartMessage"></div>
+    </section>
+
+<!----------------------------------------------- Testimonials section ------------------------------------------------->
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"The Choco Chip Cookies are absolutely delicious! Every bite is a perfect balance of crispiness and melty chocolate. My new favorite treat!"</p>
+            <span>- Sarah J.</span>
+        </div>
+    </section>
+    <div class="testimonial">
+        <p>"I love the Fruit and Nut Cookies! The combination of sweet fruits and crunchy nuts is so satisfying. A perfect snack for any time of the day!"</p>
+        <span>- Mark L.</span>
+    </div>
+    <div class="testimonial">
+        <p>"Great products and quick delivery. Highly recommended!"</p>
+        <span>- John D.</span>
+    </div>
+    
+<!------------------------------------------------ Contact section ------------------------------------------------------>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+
+        <div class="contactus">
+            <h2>Other ways to place order</h2>
+            <p>you can directly contact us through these mediums.</p>
+            <div class="social">
+                <a href="mailto:rashisoni207@gmail.com"><img src="./assetes/gmaillogo.png" alt="gmail" width="50px"></a>
+                <a href="https://wa.me/qr/YKFDJFIHZ4FEJ1"><img src="./assetes/whatsapplogo.webp" alt="gmail" width="50px"></a>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------------ ourteam section ------------------------------------------------------>
+
+    <section id="ourteam">
+        <div class="teamimg">
+            <img src="./assetes/teamimg.jpg" alt="our team image" width="70%">
+        </div>
+    </section>
+
+<!------------------------------------------------ footer section ------------------------------------------------------>
+
+    <footer>
+        <p>&copy; Online Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="./java/script.js"></script>
+</body>
+</html>

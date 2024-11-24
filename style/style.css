@@ -1,0 +1,340 @@
+/* ----------------------------------- UNIVERSAL ESTABLISHMENTS ---------------------------------- */
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f8fc;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- HEADER & NAVBAR CSS ------------------------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.nav-link .active {
+    background: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- HERO SECTION CSS ---------------------------------------- */
+
+.hero {
+    background: url(../assetes/cookies.jpeg) no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+}
+
+/* ---------------------------------------- CAROUSAL SECTION CSS ---------------------------------------- */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.visible {
+    opacity: 1;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #e55757;
+    transform: scale(1.05);
+}
+
+/* ---------------------------------------- SERVICES SECTION CSS ---------------------------------------- */
+
+#services {
+    background: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.2em;
+    margin-bottom: 1.5em;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.service {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #ff6b6b;
+    margin-bottom: 1em;
+}
+
+.service p {
+    color: #666;
+    font-size: 1em;
+}
+
+/* ---------------------------------------- PRODUCTS SECTION CSS ---------------------------------------- */
+
+#products {
+    background: #f7f8fc;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2.2em;
+    margin-bottom: 1.5em;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 1em;
+    margin: 1em auto 2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.product-grid {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.product {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 200px;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.product button {
+    padding: 0.5em 1em;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: #e55757;
+}
+
+/* ---------------------------------------- TESTIMONIALS SECTION CSS ---------------------------------------- */
+
+#testimonials {
+    background: #fff7f7;
+    padding: 4em 2em;
+}
+
+#testimonials h2 {
+    font-size: 2.2em;
+    margin-bottom: 2em;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 2em;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.testimonial span {
+    font-size: 1em;
+    color: #ff6b6b;
+}
+
+/* ---------------------------------------- CONTACT SECTION CSS ---------------------------------------- */
+
+#contact {
+    background: #fff;
+    padding: 4em 2em;
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/* ---------------------------------------- CONTACTUS SECTION CSS ---------------------------------------- */
+
+.contactus {
+    background: #fff;
+    padding: 4em 2em;
+    align-items: center;
+    text-align: center;
+}
+
+.contactus h2 {
+    font-size: 2.2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contactus p{
+    margin-bottom: 2.2em;
+    text-align: center;
+}
+
+.social{
+    padding: 0em 2em;
+    
+}
+
+.social a{
+    margin-right: 15px;
+}
+
+/* ---------------------------------------- OURTEAM SECTION CSS ---------------------------------------- */
+
+#ourteam {
+    background: #fff;
+    padding: 4em 2em;
+    align-items: center;
+    text-align: center;
+}
